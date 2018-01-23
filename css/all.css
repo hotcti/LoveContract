@@ -1,0 +1,276 @@
+* {
+  -webkit-transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1);
+  transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1);
+}
+body {
+  background: radial-gradient(#ffa500, #f33, #800080);
+  color: #fff;
+  font-family: raleway, sans-serif;
+  overflow: hidden;
+}
+#t1 {
+  overflow: hidden;
+  background: repeating-radial-gradient(circle, rgba(255,192,203,0.3), rgba(0,0,255,0.3) 50%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3));
+  background-size: 5px 5px;
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 400%;
+  position: relative;
+}
+.logo {
+  width: 75px;
+  height: 75px;
+}
+nav {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255,192,203,0.4)), to(rgba(255,201,211,0.6)));
+  background: linear-gradient(to right, rgba(255,192,203,0.4), rgba(255,201,211,0.6));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+  width: 15%;
+}
+nav ul {
+  padding: 5px;
+  text-align: center;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 1em;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+}
+nav ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+nav ul li a:before {
+  content: "";
+  background: #f00;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  visibility: hidden;
+}
+nav ul li .about:before {
+  background: #00f;
+}
+nav ul li .work:before {
+  background: #800080;
+}
+nav ul li .contact:before {
+  background: #f60;
+}
+.page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+  position: relative;
+  font-size: 1.5em;
+}
+.second {
+  -webkit-transform: translateX(500%);
+          transform: translateX(500%);
+  margin-left: -20em;
+}
+#sign {
+  width: 135px;
+  height: 68px;
+  position: fixed;
+  margin-top: 20%;
+  margin-left: 37%;
+}
+#flower{
+  position: fixed;
+  margin-top: 20%;
+  margin-left: -29%;
+}
+#marry{
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  margin-top: -6%;
+  margin-left: 45%;
+}
+#love {
+  float: right;
+  margin-right: -5%;
+}
+#about #love {
+  position: fixed;
+  margin-top: 23%;
+  margin-left: 43%;
+}
+#work #love {
+  position: fixed;
+  margin-top: 23%;
+  margin-left: 43%;
+}
+#about p,
+#work p,
+#contact p {
+  -webkit-transform: translateX(360%);
+          transform: translateX(360%);
+  margin-left: 0.5em;
+}
+#home {
+  background: rgba(255,192,203,0.5);
+}
+#t1:target nav {
+  background: rgba(255,0,0,0.6);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.8)), to(rgba(51,0,0,0.6)));
+  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(51,0,0,0.6));
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+#t1:target .nav-link #a-home {
+  color: #f00;
+}
+#t1:target .page#home {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background-color: rgba(255,0,0,0.6);
+}
+#t1:target .page#home .second {
+  line-height: 1.7;
+  -webkit-transform: translateX(52%);
+          transform: translateX(52%);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+#t1:target .page#home .first,
+#t1:target .fa-heart {
+  display: none;
+}
+#about {
+  background: rgba(0,0,255,0.6);
+/*p
+    height 300vh*/
+}
+#t2:target #t4 {
+  overflow-y: visible;
+}
+#t2:target .first,
+#t2:target .fa-heart {
+  display: none;
+}
+#t2:target nav {
+  background: rgba(0,0,255,0.5);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.8)), to(rgba(0,0,51,0.6)));
+  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,51,0.6));
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+#t2:target .nav-link #a-about {
+  color: #00f;
+}
+#t2:target .page#about {
+  -webkit-transform: translateX(-100.1%);
+          transform: translateX(-100.1%);
+}
+#t2:target .page#about p {
+  line-height: 1.7;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+#work {
+  background: rgba(128,0,128,0.6);
+}
+#t3:target .first,
+#t3:target .fa-heart {
+  display: none;
+}
+#t3:target nav {
+  background: rgba(128,0,128,0.5);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.8)), to(rgba(26,0,26,0.6)));
+  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(26,0,26,0.6));
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+#t3:target .nav-link #a-work {
+  color: #800080;
+}
+#t3:target .page#work {
+  -webkit-transform: translateX(-200.1%);
+          transform: translateX(-200.1%);
+}
+#t3:target .page#work p {
+  line-height: 1.7;
+  -webkit-transform: translateX(9%);
+          transform: translateX(9%);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+#contact {
+  background: rgba(255,102,0,0.6);
+}
+#t4:target .first,
+#t4:target .fa-heart {
+  display: none;
+}
+#t4:target nav {
+  background: rgba(255,102,0,0.5);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.8)), to(rgba(51,20,0,0.6)));
+  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(51,20,0,0.6));
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+#t4:target .nav-link #a-contact {
+  color: #f60;
+}
+#t4:target .page#contact {
+  -webkit-transform: translateX(-300.1%);
+          transform: translateX(-300.1%);
+}
+#t4:target .page#contact p {
+  line-height: 1.7;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
