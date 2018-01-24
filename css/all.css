@@ -126,15 +126,17 @@ nav ul li .contact:before {
 }
 #flower{
   position: fixed;
-  margin-top: 19%;
-  margin-left: -27%;
+  width: 45px;
+  height: 45px;
+  margin-top: 20%;
+  margin-left: -26%;
 }
 #marry{
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   position: fixed;
-  margin-top: -5%;
-  margin-left: 52%;
+  margin-top: -3%;
+  margin-left: 54%;
 }
 #love {
   float: right;
