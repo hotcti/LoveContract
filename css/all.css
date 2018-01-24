@@ -29,8 +29,8 @@ main {
   position: relative;
 }
 .logo {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
 }
 nav {
   position: fixed;
@@ -62,6 +62,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   letter-spacing: 1.5px;
+  font-size: 0.8em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   position: relative;
@@ -109,7 +110,7 @@ nav ul li .contact:before {
       align-content: center;
   height: 100vh;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .second {
   -webkit-transform: translateX(500%);
@@ -120,34 +121,29 @@ nav ul li .contact:before {
   width: 135px;
   height: 68px;
   position: fixed;
-  margin-top: 20%;
+  margin-top: 19%;
   margin-left: 37%;
 }
 #flower{
   position: fixed;
-  margin-top: 20%;
-  margin-left: -29%;
+  margin-top: 19%;
+  margin-left: -27%;
 }
 #marry{
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   position: fixed;
-  margin-top: -6%;
-  margin-left: 45%;
+  margin-top: -5%;
+  margin-left: 52%;
 }
 #love {
   float: right;
   margin-right: -5%;
 }
-#about #love {
+#about #love, #work #love {
   position: fixed;
-  margin-top: 23%;
-  margin-left: 43%;
-}
-#work #love {
-  position: fixed;
-  margin-top: 23%;
-  margin-left: 43%;
+  margin-top: 20%;
+  margin-left: 38%;
 }
 #about p,
 #work p,
@@ -185,6 +181,10 @@ nav ul li .contact:before {
 #t1:target .fa-heart {
   display: none;
 }
+.page#home .first{
+  font-size: 1.3em;
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+}
 #about {
   background: rgba(0,0,255,0.6);
 /*p
@@ -213,8 +213,8 @@ nav ul li .contact:before {
 }
 #t2:target .page#about p {
   line-height: 1.7;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
+  -webkit-transform: translateX(4%);
+          transform: translateX(4%);
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
