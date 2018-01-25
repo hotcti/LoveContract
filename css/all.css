@@ -135,8 +135,8 @@ nav ul li .contact:before {
   width: 140px;
   height: 140px;
   position: fixed;
-  margin-top: -3%;
-  margin-left: 55%;
+  margin-top: 0%;
+  margin-left: -1%;
 }
 #love {
   float: right;
