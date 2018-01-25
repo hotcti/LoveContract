@@ -1,6 +1,7 @@
 * {
   -webkit-transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1);
   transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1);
+  box-sizing: border-box;
 }
 body {
   background: radial-gradient(#ffa500, #f33, #800080);
@@ -117,35 +118,41 @@ nav ul li .contact:before {
           transform: translateX(500%);
   margin-left: -20em;
 }
+.fa-heart{
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff;  
+}
+.fa-heart-o{
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;  
+}
 #sign {
   width: 135px;
   height: 68px;
-  position: fixed;
-  margin-top: 19%;
-  margin-left: 37%;
+  position: absolute;
+  bottom: 7%;
+  right: 5%;
 }
 #flower{
-  position: fixed;
+  position: absolute;
   width: 45px;
   height: 45px;
-  margin-top: 20%;
-  margin-left: -26%;
+  bottom: 10%;
+  left: 20%;
 }
 #marry{
   width: 140px;
   height: 140px;
-  position: fixed;
-  margin-top: 0%;
-  margin-left: -1%;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
 }
 #love {
   float: right;
   margin-right: -5%;
 }
 #about #love, #work #love {
-  position: fixed;
-  margin-top: 20%;
-  margin-left: 38%;
+  position: absolute;
+  bottom: 16%;
+  right: 20%;
 }
 #about p,
 #work p,
